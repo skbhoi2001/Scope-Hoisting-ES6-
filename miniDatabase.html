@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <button id="object" onclick="object()">Object</button>
+        <button id="array" onclick="array()">Array</button>
+        <button id="function" onclick="fun()">Functions</button>
+        <button id="string" onclick="string()">String</button>
+        <button id="number" onclick="number()">Numbers</button>
+        <button id="null" onclick="nulls()">null</button>
+        <button id="undefined" onclick="undefineds()">undefined</button>
+        <div id="output"></div>
+    </div>
+</body>
+</html>
+<script>
+    var out = document.getElementById('output')
+    function object(){
+    out.innerHTML=""
+    var ul=document.createElement("ul")
+    var li=document.createElement("li")
+    li.textContent="An object is a collection of properties "
+    var li1=document.createElement("li")
+    li1.textContent="property is an association between a name (or key) and a value."
+    var li2=document.createElement("li")
+    li2.textContent="Objects in js are more like maps/dictionaries"
+    var li3=document.createElement("li")
+    li3.textContent="There is the mutation properties "
+    var li4=document.createElement("li")
+    li4.textContent="There is a property called Object.freez(the object to be freeze) to avoid mutation"
+    ul.append(li)
+    ul.append(li1)
+    ul.append(li2)
+    ul.append(li3)
+    ul.append(li4)
+    out.append(ul)
+   }
+   function array(){
+    out.innerHTML=""
+    var ul=document.createElement("ul")
+    var li=document.createElement("li")
+    li.textContent="Used to store multiple values in single variable"
+    var li1=document.createElement("li")
+    li1.textContent="Able to hold multiple varible at a single time"
+    var li2=document.createElement("li")
+    li2.textContent="To create array with values is arr=[1,2,3,4,5]"
+    var li3=document.createElement("li")
+    li3.textContent="Another way is arr= new Array()"
+    var li4=document.createElement("li")
+    li4.textContent="Index number play a very important role by accessing it"
+    ul.append(li)
+    ul.append(li1)
+    ul.append(li2)
+    ul.append(li3)
+    ul.append(li4)
+    out.append(ul)
+   }
+   function nulls(){
+    out.innerHTML=""
+    var ul=document.createElement("ul")
+    var li3=document.createElement("li")
+    li3.textContent="null is a type of object "
+    var li=document.createElement("li")
+    li.textContent="Written with literals :: null"
+    var li1=document.createElement("li")
+    li1.textContent="It happens when the the compiler unable to find the object value"
+    var li2=document.createElement("li")
+    li2.textContent="var arr , when we console.log(arr) its give a null value"
+   
+    ul.append(li3)
+    ul.append(li)
+    ul.append(li1)
+    ul.append(li2)
+    
+    out.append(ul)
+   }
+
+
+   function fun(){
+    out.innerHTML=""
+    var ul=document.createElement("ul")
+    var li=document.createElement("li")
+    li.textContent="It is generally used to do a specefic task"
+    var li1=document.createElement("li")
+    li1.textContent="Syntax:: function some(variable){} "
+    var li2=document.createElement("li")
+    li2.textContent="After that the function to be called:: some()"
+    var li3=document.createElement("li")
+    li3.textContent="There is a function called the anonymous function "
+    var li4=document.createElement("li")
+    li4.textContent="Generally in the anonymous function we declare it with a variable i.e. var x= function(){} , later this is called by x()"
+    ul.append(li)
+    ul.append(li1)
+    ul.append(li2)
+    ul.append(li3)
+    ul.append(li4)
+    out.append(ul)
+   }
+
+
+   function string(){
+    out.innerHTML=""
+    var ul=document.createElement("ul")
+    var li=document.createElement("li")
+    li.textContent="Used to manipulate the sequence of the character"
+    var li1=document.createElement("li")
+    li1.textContent="length :: used to find the length of the string"
+    var li2=document.createElement("li")
+    li2.textContent="substring:: used to show the part of the string"
+    var li3=document.createElement("li")
+    li3.textContent="We can access each element of the string by accesing the index number "
+
+    ul.append(li)
+    ul.append(li1)
+    ul.append(li2)
+    ul.append(li3)
+    out.append(ul)
+   }
+   function number(){
+    out.innerHTML=""
+    var ul=document.createElement("ul")
+    var li=document.createElement("li")
+    li.textContent="Number function helps to convert the object argument into the number function "
+    var li1=document.createElement("li")
+    li1.textContent="If number is not defined then it returns NaN"
+    var li2=document.createElement("li")
+    li2.textContent="Syntax:: Number(object)"
+    var li3=document.createElement("li")
+    li3.textContent="There is a number methord helps to work with the number"
+    ul.append(li)
+    ul.append(li1)
+    ul.append(li2)
+    ul.append(li3)
+    out.append(ul)
+   }
+   function undefineds(){
+    out.innerHTML=""
+    var ul=document.createElement("ul")
+    var li=document.createElement("li")
+    li.textContent="When a variable is not assigned any variable then its undefined  "
+    var li1=document.createElement("li")
+    li1.textContent="y is a variable then console.log(y) is undefined"
+
+    ul.append(li)
+    ul.append(li1)
+    out.append(ul)
+   }
+    </script>
